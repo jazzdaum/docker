@@ -1,14 +1,7 @@
-# docker-compose运行wiki系统
+# docker仓库摘要
+各个文件夹中的项目均由docker-compose运行
 
-## confuluence文件夹
-用来构建wiki镜像
-运行的时直接申请试用授权即可使用
 
-## confuluence-mysql文件夹
-用来构建wiki数据库
-设置了基本配置
-
-## confuluence-docker-compose.yaml文件
-用来启动wiki系统
-- 数据本地持久化。
-- 更正了容器内部时间。
+### confluence
+- 构建新的confluence进行和MySQL镜像
+- 使用docker-compose运行
