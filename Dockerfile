@@ -1,5 +1,5 @@
 FROM openjdk:8-alpine
-MAINTAINER zyr zyrcc.cn
+MAINTAINER zyr
 
 # Setup useful environment variables
 ENV CONF_HOME     /var/atlassian/confluence
