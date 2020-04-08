@@ -1,0 +1,26 @@
+wiki:
+  image: zhyr/atlassian-confluence-decoder:7.3.4
+  restart: always
+  environment:
+    - TZ=Asia/Shanghai
+    - JVM_XMX=3024m
+    - JVM_XMS=512m
+  ports:
+    - '10380:8090'
+  links:
+    - db
+  volumes:
+    - ./data/confluence:/var/atlassian/confluence
+    - ./data/logs:/opt/atlassian/confluence/logs
+
+db:
+  image: zhyr/confluence-mysql:5.7
+  restart: always
+  environment:
+    - TZ=Asia/Shanghai
+    - MYSQL_USER=confluence
+    - MYSQL_PASSWORD=conflence
+    - MYSQL_DATABASE=confluence
+    - MYSQL_ROOT_PASSWORD=confluence
+  volumes:
+    - ./data/mysql:/var/lib/mysql
