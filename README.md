@@ -3,5 +3,5 @@
 
 
 ### confluence
-- 构建新的confluence进行和MySQL镜像
+- 构建新的confluence镜像和MySQL镜像
 - 使用docker-compose运行
