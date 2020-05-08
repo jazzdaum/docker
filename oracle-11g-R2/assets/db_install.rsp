@@ -34,7 +34,7 @@ oracle.install.option=INSTALL_DB_SWONLY
 # first hostname found on the system. (e.g., for systems with multiple hostnames 
 # and network interfaces)
 #-------------------------------------------------------------------------------
-ORACLE_HOSTNAME=oracle
+ORACLE_HOSTNAME=database
 
 #-------------------------------------------------------------------------------
 # Specify the Unix group to be set for the inventory directory.  
@@ -83,7 +83,7 @@ INVENTORY_LOCATION=/opt/oracle/oraInventory
 # Specify value as the following to select all the languages.
 # Example : SELECTED_LANGUAGES=all_langs  
 #------------------------------------------------------------------------------
-SELECTED_LANGUAGES=en,zh_CN,zh_TW
+SELECTED_LANGUAGES=en,fr
 
 #------------------------------------------------------------------------------
 # Specify the complete path of the Oracle Home.
@@ -105,7 +105,7 @@ ORACLE_BASE=/opt/oracle/app
 #   - PE     : Personal Edition (WINDOWS ONLY)
 #------------------------------------------------------------------------------
 oracle.install.db.InstallEdition=EE
-oracle.install.db.isCustomInstall=false
+
 #------------------------------------------------------------------------------
 # This variable is used to enable or disable custom install and is considered
 # only if InstallEdition is EE.
@@ -186,17 +186,17 @@ oracle.install.db.racOneServiceName=
 #   - GENERAL_PURPOSE/TRANSACTION_PROCESSING             
 #   - DATA_WAREHOUSE                                
 #------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.type=GENERAL_PURPOSE
+oracle.install.db.config.starterdb.type=
 
 #------------------------------------------------------------------------------
 # Specify the Starter Database Global Database Name. 
 #------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.globalDBName=ORCL
+oracle.install.db.config.starterdb.globalDBName=
 
 #------------------------------------------------------------------------------
 # Specify the Starter Database SID.
 #------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.SID=ORCL
+oracle.install.db.config.starterdb.SID=
 
 #------------------------------------------------------------------------------
 # Specify the Starter Database character set.
@@ -210,7 +210,7 @@ oracle.install.db.config.starterdb.SID=ORCL
 # KO16MSWIN949, ZHS16GBK, TH8TISASCII, ZHT32EUC, ZHT16MSWIN950,
 # ZHT16HKSCS, WE8ISO8859P9, TR8MSWIN1254, VN8MSWIN1258
 #------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.characterSet=ZHS16GBK
+oracle.install.db.config.starterdb.characterSet=AL32UTF8
 
 #------------------------------------------------------------------------------
 # This variable should be set to true if Automatic Memory Management 
@@ -226,7 +226,7 @@ oracle.install.db.config.starterdb.memoryOption=true
 # on the system.
 # Example: oracle.install.db.config.starterdb.memoryLimit=512
 #------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.memoryLimit=28672
+oracle.install.db.config.starterdb.memoryLimit=
 
 #------------------------------------------------------------------------------
 # This variable controls whether to load Example Schemas onto
@@ -259,7 +259,7 @@ oracle.install.db.config.starterdb.enableSecuritySettings=true
 # This variable holds the password that is to be used for all schemas in the
 # starter database.
 #-------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.password.ALL=oracle
+oracle.install.db.config.starterdb.password.ALL=
 
 #-------------------------------------------------------------------------------
 # Specify the SYS password for the starter database.
@@ -385,7 +385,7 @@ MYORACLESUPPORT_PASSWORD=
 #
 # Example    : SECURITY_UPDATES_VIA_MYORACLESUPPORT=true
 #------------------------------------------------------------------------------
-SECURITY_UPDATES_VIA_MYORACLESUPPORT=false
+SECURITY_UPDATES_VIA_MYORACLESUPPORT=
 
 #------------------------------------------------------------------------------
 # Specify whether user doesn't want to configure Security Updates.
