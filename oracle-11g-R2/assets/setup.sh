@@ -20,8 +20,8 @@ users () {
 	groupadd -g 200 oinstall
 	groupadd -g 201 dba
 	useradd -u 440 -g oinstall -G dba -d /opt/oracle oracle
-	echo "oracle:install" | chpasswd
-	echo "root:install" | chpasswd
+	echo "oracle:oracle" | chpasswd
+	echo "root:oracle" | chpasswd
 	sed -i "s/pam_namespace.so/pam_namespace.so\nsession    required     pam_limits.so/g" /etc/pam.d/login
 	mkdir -p -m 755 /opt/oracle/app
 	mkdir -p -m 755 /opt/oracle/oraInventory
